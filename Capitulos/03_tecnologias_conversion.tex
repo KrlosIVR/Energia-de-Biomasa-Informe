@@ -27,6 +27,13 @@ Fisicoquímica & Extracción + transesterificación & Aceite + alcohol + cataliz
 \end{tabularx}
 \end{table}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Tecnologías de Conversión.jpg}
+    \caption{Principales rutas de transformación de la biomasa en productos energéticos. Cada ruta depende de la naturaleza de la materia prima y del producto que se desea obtener}
+    \label{}
+\end{figure}
+
 \section{Combustión directa}
 \label{sec:combustion}
 
@@ -46,6 +53,13 @@ De forma global, la reacción de oxidación completa con aire puede representars
 \mathrm{CH}_x\mathrm{O}_y + a\left(\mathrm{O_2} + 3{,}76\,\mathrm{N_2}\right) \longrightarrow \mathrm{CO_2} + \mathrm{H_2O} + \mathrm{N_2} + \text{calor}
 \end{equation}
 Una combustión eficiente exige cumplir las denominadas «tres T»: \textit{temperatura} suficiente, \textit{tiempo de residencia} adecuado y \textit{turbulencia} para mezclar aire y gases. El aire se suministra escalonado en aire primario (bajo la parrilla o el lecho) y aire secundario (sobre el lecho, para quemar los volátiles), con excesos de aire típicos de 20--60~\%. Los principales contaminantes y sus sistemas de control se resumen en la Tabla~\ref{tab:emisiones_combustion}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Etapas de combustión de una partícula de biomasa.jpg}
+    \caption{Etapas de secado, liberación de volátiles, combustión del carbonizado y formación de cenizas. Es la imagen más directamente relacionada con la explicación de tu mecanismo de combustión}
+    \label{}
+\end{figure}
 
 \begin{table}[htbp]
 \centering
@@ -88,6 +102,25 @@ La caldera integra el hogar, paredes de agua, sobrecalentador, economizador y pr
 \begin{equation}
 \eta_{\mathrm{caldera}} = \frac{\dot{Q}_{\text{útil}}}{\dot{m}_{\mathrm{comb}} \cdot \mathrm{PCI}}
 \end{equation}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Combustión directa - CALDERA.jpg}
+        \caption{Esquema de una caldera de combustión invertida para leña con sistema de tiro inducido, regulación por sonda lambda e intercambiador de calor vertical}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Combustión directa - Combustión en parrilla.jpg}
+        \caption{Caldera de biomasa de parrilla escalonada móvil con bóvedas refractarias, intercambiador pirotubular horizontal y separador multiciclónico integrado}
+    \end{subfigure}
+
+    \caption{Tecnologías de calderas empleadas en la combustión directa de biomasa sólida}
+    \label{fig:grupo_tres}
+\end{figure}
+
 Las principales pérdidas corresponden a los gases secos de chimenea (la mayor pérdida, creciente con el exceso de aire y temperatura de salida), la evaporación de la humedad del combustible, los inquemados (carbono en cenizas y $\mathrm{CO}$), y la radiación, convección y purgas. En parámetros de vapor, las plantas pequeñas operan a 20--60~bar y 400--450~\textdegree C, mientras que las grandes alcanzan 100--165~bar y 500--540~\textdegree C (límite impuesto por la corrosión por cenizas).
 
 Como balance energético orientativo para una central dedicada mediana, de cada 100 unidades de energía del combustible (sobre PCI), entre 85 y 90 se transfieren al vapor; unas 55--60 se rechazan en el condensador; cerca de 30 salen como trabajo en el eje de la turbina; y tras descontar pérdidas de generador y consumos auxiliares (ventiladores, bombas y manejo de combustible, que representan 8--10~\% de la generación bruta), resultan alrededor de 25--28 unidades de electricidad neta.
@@ -98,6 +131,13 @@ Los ciclos termodinámicos aplicados son:
 \item \textbf{Ciclo Rankine Orgánico (ORC):} Sustituye el agua por un fluido orgánico de bajo punto de ebullición (siloxanos o hidrocarburos) calentado mediante aceite térmico. Se emplea entre 0,2 y $5~\mathrm{MW_e}$ con eficiencia eléctrica de 15--20~\%, destacando por su operación automatizada, buen desempeño a carga parcial y ausencia de planta de tratamiento de agua.
 \item \textbf{Co-combustión y conversión total:} La co-combustión quema biomasa junto con carbón de forma directa (mezcla en molinos o quemadores), indirecta (gasificación previa) o paralela (caldera independiente). Es comercialmente viable hasta un 20~\% en base energética y técnicamente puede superar el 50~\%, alcanzando eficiencias eléctricas de 36--44~\% \cite{irena2013cofiring}. El paso siguiente es la conversión total de la central, como en el caso de Drax \cite{drax2025annual}.
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Combustión directa - Generación de electricidad.jpg}
+    \caption{Esquema de generación eléctrica mediante combustión de biomasa y ciclo Rankine}
+    \label{}
+\end{figure}
 
 \section{Gasificación}
 \label{sec:gasificacion}
@@ -167,6 +207,20 @@ Flujo arrastrado & Partícula fina ($>1\,200$~\textdegree C) & Muy grande & Gas 
 
 El principal obstáculo técnico de la gasificación son los \textbf{alquitranes}, hidrocarburos pesados que condensan al enfriarse y obstruyen filtros, válvulas y motores. Para su uso en motores de combustión interna, el gas debe enfriarse y limpiarse mediante ciclones, filtros, lavadores (\textit{scrubbers}) o craqueo catalítico hasta niveles inferiores a 50--100~mg/Nm$^3$ de alquitrán \cite{fao1986woodgas}. Acoplado a motores de gas (o motores diésel en modo dual), el conjunto alcanza eficiencias eléctricas de 20--30~\%, mientras que la gasificación integrada en ciclo combinado (BIGCC) proyecta 35--45~\%, aunque permanece en fase de demostración \cite{ieabioenergy2025task33}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Comparación de los tipos de gasificadores.jpg}
+    \caption{Comparación esquemática de diferentes configuraciones de gasificadores, incluyendo lecho fijo ascendente (updraft), descendente (downdraft), lecho fluidizado y flujo arrastrado. Se muestran las direcciones de alimentación de biomasa, entrada del agente gasificante y salida del gas producido}
+    \label{}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Aprovechamiento energético del syngas.jpg}
+    \caption{Conjunto motor-generador diseñado para utilizar gas de síntesis como combustible. La combustión del gas dentro del motor produce energía mecánica que acciona un generador eléctrico, permitiendo transformar la energía química del syngas en electricidad}
+    \label{}
+\end{figure}
+
 \section{Pirólisis}
 \label{sec:pirolisis}
 
@@ -175,6 +229,12 @@ La pirólisis es la descomposición térmica de la biomasa en ausencia total de 
 m_{\mathrm{biomasa}} = m_{\text{bio-oil}} + m_{\mathrm{biochar}} + m_{\mathrm{gas}}
 \end{equation}
 La proporción relativa depende de la temperatura, velocidad de calentamiento y tiempo de residencia de los vapores (Tabla~\ref{tab:pirolisis_modos}). La pirólisis rápida emplea reactores de lecho fluidizado burbujeante, cono rotatorio o tornillo sinfín con condensación brusca de vapores.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Conversón termoquímica - Diagrama de pirólisis.jpg}
+    \caption{Diagrama de flujo del proceso de pirólisis de biomasa, incluyendo las etapas de pretratamiento, reacción y separación de productos (biocarbón, bioaceite y gas).}
+\end{figure}
 
 \begin{table}[htbp]
 \centering
@@ -216,6 +276,12 @@ Miscibilidad con hidrocarburos & No miscible & --- \\
 \label{sec:digestion}
 
 La digestión anaeróbica es un proceso bioquímico en el que un consorcio de microorganismos descompone la materia orgánica en ausencia de oxígeno para producir \textbf{biogás} y un residuo estabilizado rico en nutrientes denominado \textbf{digestato} \cite{alseadi2008biogas, idae2007digestores}. Constituye la ruta idónea para sustratos muy húmedos (estiércoles, lodos de depuradoras, efluentes agroindustriales y fracción orgánica de residuos urbanos), inviables en rutas térmicas \cite{ieabioenergy2024task37}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Esquema general del proceso de digestión anaeróbica.jpg}
+    \caption{Representación de las principales etapas de una planta de digestión anaeróbica, desde la alimentación de residuos orgánicos hasta su descomposición en el digestor}
+\end{figure}
 
 \subsection{Etapas y parámetros de operación}
 El proceso biológico transcurre en cuatro etapas secuenciales:
@@ -269,6 +335,12 @@ Ensilaje de maíz & 170--220 \\
 
 Para ilustrar la escala, un motogenerador de $1~\mathrm{MW_e}$ al 38~\% de eficiencia requiere $1 / 0{,}38 \approx 2{,}63~\mathrm{MW_{th}}$ de biogás ($\approx 440~\text{Nm}^3/\text{h}$ o $10\,600~\text{Nm}^3/\text{día}$ a $21{,}5~\text{MJ/Nm}^3$). Con estiércol a $25~\text{Nm}^3/\text{t}$, ello exige $\approx 420~\text{t/día}$ y un digestor de $V \approx 420 \times 25 \approx 10\,500~\text{m}^3$ ($\mathrm{TRH}=25$~días), razón por la cual estas plantas suelen ser de pequeña escala o recurren a co-digestión. Entre los reactores empleados destacan las lagunas cubiertas (climas cálidos y efluentes agroindustriales), reactores de mezcla completa (CSTR), flujo pistón, reactores UASB (aguas industriales de alta carga) y pozos de captación en rellenos sanitarios.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Digestores anaeróbicos industriales.jpg}
+    \caption{Instalación industrial compuesta por digestores de gran volumen, donde la materia orgánica permanece en condiciones anaeróbicas para favorecer la actividad de los microorganismos metanogénicos. Estos reactores permiten procesar grandes cantidades de residuos orgánicos y producir biogás de manera continua}
+\end{figure}
+
 Antes de alimentar motores o inyectarse a red, el biogás se seca y desulfura (para remover el $\mathrm{H_2S}$ corrosivo y siloxanos en gas de relleno). Mediante separación de $\mathrm{CO_2}$ (lavado con agua, PSA o membranas) se obtiene \textit{biometano} ($>95~\%~\mathrm{CH_4}$). La IEA estima un potencial global sostenible cercano a $10^{12}~\text{m}^3$ equivalentes de gas natural al año, del cual hoy se aprovecha menos del 5~\% (1,76~EJ en 2023) \cite{iea2025biogas, wba2025gbsr}.
 
 \section{Comparación de rutas para generación eléctrica}
@@ -276,7 +348,7 @@ Antes de alimentar motores o inyectarse a red, el biogás se seca y desulfura (p
 
 La Tabla~\ref{tab:comparacion_rutas} sintetiza el desempeño eléctrico, la escala típica y la madurez comercial de las distintas tecnologías analizadas. No existe una opción universalmente superior: la combustión con ciclo Rankine domina en mediana y gran escala con biomasa sólida; la gasificación y el ORC atienden nichos descentralizados; y la digestión anaeróbica con motogeneradores lidera en residuos húmedos.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Comparación de sistemas de generación eléctrica con biomasa (valores orientativos).}
 \label{tab:comparacion_rutas}
@@ -294,3 +366,27 @@ Pirólisis + motor o turbina & --- & --- & Precomercial \\
 \bottomrule
 \end{tabularx}
 \end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Generación eléctrica mediante ciclo Rankine orgánico (ORC).jpg}
+    \caption{Generación eléctrica mediante ciclo Rankine orgánico (ORC): El calor procedente de una fuente térmica se transfiere a un fluido orgánico de bajo punto de ebullición. El vapor generado acciona una turbina conectada a un generador eléctrico y posteriormente se condensa para retornar al evaporador, cerrando el ciclo. Esta tecnología permite aprovechar fuentes de calor de temperaturas relativamente bajas}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Generación eléctrica mediante combustión directa y ciclo Rankine.jpg}
+    \caption{Generación eléctrica mediante combustión directa y ciclo Rankine: Sistema de generación eléctrica en el que la biomasa sólida se quema en una caldera para producir vapor de agua a alta presión y temperatura. Este vapor se expande en una turbina acoplada a un generador eléctrico, mientras que posteriormente se condensa y recircula para completar el ciclo termodinámico}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Gasificación de biomasa para generación eléctrica.jpg}
+    \caption{Gasificación de biomasa para generación eléctrica: Proceso de conversión termoquímica de biomasa sólida en un gas combustible mediante su reacción a temperaturas elevadas con una cantidad controlada de agente gasificante. El gas producido, compuesto principalmente por monóxido de carbono, hidrógeno y metano, pasa por un sistema de acondicionamiento y limpieza antes de alimentar un motor de combustión interna acoplado a un generador eléctrico}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figuras/Sección B - Tecnologías de Conversión/Generación eléctrica mediante biogás y ciclo de cogeneración.jpg}
+    \caption{Generación eléctrica mediante biogás y ciclo de cogeneración: Utiliza el biogás producido en un digestor anaeróbico como combustible para alimentar un motor de combustión interna acoplado a un generador eléctrico. Además de producir electricidad, el sistema recupera el calor residual de los gases de escape y del circuito de refrigeración del motor para su aprovechamiento térmico, incrementando la eficiencia energética global de la instalación}
+\end{figure}
