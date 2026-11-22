@@ -31,9 +31,26 @@ Grande & $>50~\mathrm{MW_e}$ & Caldera CFB, combustión pulverizada, conversión
 \subsection{Casos de referencia internacional y regional}
 \begin{itemize}[leftmargin=1.5em]
 \item \textbf{Mediana escala --- Ingenios azucareros de Guatemala:} La capacidad instalada conjunta de los ingenios guatemaltecos alcanzó $933~\text{MW}$ en 2019 ---más del doble de la mayor hidroeléctrica del país (Chixoy)---, llegando a cubrir hasta el 31~\% de la demanda eléctrica nacional durante la zafra (noviembre a mayo) \cite{eyn2019guatemala}. Mediante mejoras de presión y temperatura de vapor pasaron de generar $44$ a $91~\text{kWh}$ por tonelada de caña molida \cite{er2018bagazo}, logrando además entregar energía al sistema fuera de zafra \cite{prensalatina2024guatemala}.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\textwidth]{Figuras/Sección C - Plantas de biomasa por el mundo/Planta de generación eléctrica del Ingenio Magdalena (Guatemala).jpg}
+        \caption{Instalación industrial de generación eléctrica del Grupo Magdalena, en Guatemala. Se observan estructuras de calderas, tuberías, plataformas y equipos auxiliares empleados en la conversión térmica para producir electricidad. Es un ejemplo de infraestructura de generación energética vinculada a la industria azucarera guatemalteca}
+    \end{figure}
 \item \textbf{Gran escala --- Alholmens Kraft (Finlandia):} Considerada la mayor central de cogeneración con biomasa del mundo. Cuenta con $\sim 265~\mathrm{MW_e}$ instalados y una caldera de lecho fluidizado circulante (CFB) de $500~\mathrm{MW_{th}}$ a $165~\text{bar}$ y $545$~\textdegree C, suministrando además $100~\mathrm{MW_{th}}$ de vapor de proceso a una industria papelera vecina y $60~\mathrm{MW_{th}}$ de calefacción urbana a Pietarsaari \cite{alholmenskraft, flynn2005alholmens}. Fue diseñada como planta multicombustible (residuos forestales, turba y carbón); de sus 400 empleados, alrededor de 350 trabajan en la cadena de producción y manejo del combustible.
 \item \textbf{Gran escala --- Drax Power Station (Reino Unido):} Originalmente la mayor central de carbón británica con seis unidades de $660~\text{MW}$. Entre 2013 y 2018 reconvirtió cuatro unidades para quemar exclusivamente pellets de madera ($\sim 2{,}6~\text{GW}$ totales), cerrando las dos unidades de carbón restantes en 2021 \cite{drax2025annual}. En 2024 generó más del 5~\% de la electricidad del Reino Unido, importando millones de toneladas anuales de pellets desde Norteamérica, lo que ilustra tanto la viabilidad de reutilizar infraestructura térmica como los límites logísticos de la gran escala.
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figuras/Sección C - Plantas de biomasa por el mundo/Sistema de almacenamiento de pellets de madera de Drax (Reino Unido).jpg}
+    \caption{Grandes estructuras abovedadas utilizadas para almacenar pellets de madera en la central Drax. Estas instalaciones permiten mantener reservas de combustible para garantizar el suministro continuo a las unidades de generación, independientemente de las variaciones en las entregas de biomasa}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figuras/Sección C - Plantas de biomasa por el mundo/Caldera de lecho fluidizado circulante (CFB) de Alholmens Kraft.jpg}
+    \caption{Esquema constructivo de una caldera de lecho fluidizado circulante utilizada en la central Alholmens Kraft, Finlandia. Se identifican la cámara de combustión, los sistemas de circulación de sólidos, los separadores ciclónicos y las superficies de intercambio térmico. Esta tecnología permite aprovechar diferentes combustibles sólidos y mantener condiciones de combustión controladas para producir vapor a alta presión y temperatura}
+\end{figure}
 
 \section{Configuraciones de planta}
 \label{sec:configuraciones}
@@ -87,3 +104,9 @@ Así, una unidad de biomasa de $30~\text{MW}$ con $R = 5~\%$ ($0{,}05$) ante una
 Mediante su sistema de excitación y regulador automático de tensión (AVR), el generador síncrono inyecta o absorbe potencia reactiva dentro de su curva de capabilidad, sosteniendo el perfil de tensión en el punto de conexión. Esto resulta especialmente valioso porque muchas centrales de biomasa (ingenios, aserraderos) se ubican en zonas rurales al final de líneas largas de distribución o subtransmisión, donde la red es débil. Adicionalmente, aportan corriente de cortocircuito necesaria para la coordinación de protecciones.
 
 Operativamente, las calderas de parrilla y lecho fluidizado presentan cargas mínimas técnicas del 30--50~\% nominal, rampas de pocos puntos porcentuales por minuto y arranques en frío de varias horas; los lechos fluidizados ofrecen una respuesta más suave por su gran masa térmica de arena. En el control de la central se distinguen dos filosofías: en el modo \textit{turbina sigue a caldera}, la válvula de admisión regula presión y la potencia sigue lentamente a la combustión (estable pero lento); en el modo \textit{caldera sigue a turbina}, la válvula responde de inmediato a la demanda aprovechando el vapor almacenado en el domo, permitiendo cumplir con la regulación primaria. Las centrales modernas emplean un control coordinado que combina ambos esquemas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.98\textwidth]{Figuras/Sección C - Plantas de biomasa por el mundo/Sistema de excitación y regulación de tensión de un generador síncrono (AVR).jpg}
+    \caption{Diagrama funcional del sistema de excitación de un generador síncrono, en el que se representa el regulador automático de tensión (AVR) y el estabilizador del sistema de potencia (PSS). El AVR compara la tensión de referencia con la tensión terminal del generador y ajusta la corriente de excitación para mantener el nivel de tensión requerido. El PSS contribuye a amortiguar las oscilaciones electromecánicas y mejorar la estabilidad del sistema eléctrico}
+\end{figure}
